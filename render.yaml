@@ -13,7 +13,7 @@ services:
     branch: main
     healthCheckPath: /up
     buildCommand: "./bin/render-build.sh"
-    preDeployCommand: "bundle exec rails db:migrate"
+    #preDeployCommand: "bundle exec rails db:migrate"
     startCommand: "bundle exec rails server"
     envVars:
       - key: DATABASE_URL
